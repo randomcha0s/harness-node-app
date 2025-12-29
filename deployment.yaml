@@ -18,6 +18,7 @@ spec:
         #image: <+artifact.image>
         #image: 34.21.44.52:8082/node-app-repo:${image_tag}
         #image: 34.21.44.52:8082/node-app-repo:<+serviceVariables.image_tag>
-        image: 34.21.44.52:8082/node-app-repo:{{ .Values.image_tag }}
+        #image: 34.21.44.52:8082/node-app-repo:{{ .Values.image_tag }}
+        image: 34.21.44.52:8082/node-app-repo:<+image_tag>
         ports:
         - containerPort: 3000
