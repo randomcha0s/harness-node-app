@@ -17,6 +17,7 @@ spec:
       containers:
       - name: node-app
         # Harness will replace this using the values.yaml mapping we set up
-        image: 34.21.44.52:8083/node-app-repo:{{.Values.image_tag}}
+        #image: 34.21.44.52:8083/node-app-repo:{{.Values.image_tag}}
+        image: 34.21.44.52/node-app-repo:{{.Values.image_tag}}
         ports:
         - containerPort: 3000
