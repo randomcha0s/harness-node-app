@@ -12,15 +12,11 @@ spec:
       labels:
         app: node-app
     spec:
+      imagePullSecrets:
+      - name: nexus-creds
       containers:
       - name: node-app
-        # Harness will replace this with the exact image from Nexus
-        #image: <+artifact.image>
-        #image: 34.21.44.52:8082/node-app-repo:${image_tag}
-        #image: 34.21.44.52:8082/node-app-repo:<+serviceVariables.image_tag>
-        #image: 34.21.44.52:8082/node-app-repo:{{ .Values.image_tag }}
-        #image: 34.21.44.52:8082/node-app-repo:<+image_tag>
-        #image: 34.21.44.52:8082/node-app-repo:<+serviceVariables.image_tag>
+        # Harness will replace this using the values.yaml mapping we set up
         image: 34.21.44.52:8082/node-app-repo:{{.Values.image_tag}}
         ports:
         - containerPort: 3000
