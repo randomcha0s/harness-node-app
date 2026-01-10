@@ -20,6 +20,7 @@ spec:
         #image: 34.21.44.52:8083/node-app-repo:{{.Values.image_tag}}
         #image: 34.21.44.52:80/node-app-repo:{{.Values.image_tag}}
         #image: localhost:8080/node-app-repo:{{.Values.image_tag}}
-        image: 34.21.37.97:8082/node-app-repo:{{.Values.image_tag}}
+        #image: 34.21.37.97:8082/node-app-repo:{{.Values.image_tag}}
+        image: localhost:8080/node-app-repo:{{.Values.image_tag}}
         ports:
         - containerPort: 3000
