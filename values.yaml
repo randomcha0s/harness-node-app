@@ -2,4 +2,5 @@
 #image_tag: <+artifact.tag>
 #image_tag: <+artifacts.primary.tag>
 #image_tag: <+stage.spec.serviceConfig.serviceInputs.serviceDefinition.spec.variables.image_tag>
-image_tag: <+pipeline.stages.Deploy_to_GKE.spec.serviceConfig.serviceInputs.serviceDefinition.spec.variables.image_tag>
+#image_tag: <+pipeline.stages.Deploy_to_GKE.spec.serviceConfig.serviceInputs.serviceDefinition.spec.variables.image_tag>
+image_tag: <+pipeline.variables.MY_TAG>
