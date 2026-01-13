@@ -1,1 +1,2 @@
-image_tag: <+serviceVariables.image_tag>
+#image_tag: <+serviceVariables.image_tag>
+image_tag: <+artifact.tag>
