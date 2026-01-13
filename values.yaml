@@ -1,3 +1,4 @@
 #image_tag: <+serviceVariables.image_tag>
 #image_tag: <+artifact.tag>
-image_tag: <+artifacts.primary.tag>
+#image_tag: <+artifacts.primary.tag>
+image_tag: <+stage.spec.serviceConfig.serviceInputs.serviceDefinition.spec.variables.image_tag>
