@@ -1,4 +1,4 @@
-image_tag: <+artifacts.primary.tag>
+image_tag: <+trigger.artifact.buildNumber>
 #image_tag: <+serviceVariables.image_tag>
 #image_tag: <+artifact.tag>
 #image_tag: <+artifacts.primary.tag>
