@@ -1,5 +1,6 @@
 #image_tag: <+serviceVariables.image_tag>
 #image_tag: <+trigger.artifact.buildNumber> ?: (<+pipeline.variables.MY_TAG> ?: "latest")
+image_tag: <+trigger.artifact.buildNumber> ?: (<+pipeline.variables.MY_TAG> ?: "latest")
 #image_tag: <+trigger.artifact.buildNumber> ?: (<+artifacts.primary.tag> ?: "latest")
 #image_tag: <+trigger.artifact.buildNumber> ?: <+artifacts.primary.tag>
 #image_tag: <+trigger.artifact.buildNumber>
@@ -8,4 +9,4 @@
 #image_tag: <+artifacts.primary.tag>
 #image_tag: <+stage.spec.serviceConfig.serviceInputs.serviceDefinition.spec.variables.image_tag>
 #image_tag: <+pipeline.stages.Deploy_to_GKE.spec.serviceConfig.serviceInputs.serviceDefinition.spec.variables.image_tag>
-image_tag: <+pipeline.variables.MY_TAG>
+#image_tag: <+pipeline.variables.MY_TAG>
