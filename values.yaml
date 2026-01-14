@@ -1,4 +1,5 @@
-image_tag: <+trigger.artifact.buildNumber> ?: (<+artifacts.primary.tag> ?: "latest")
+image_tag: <+trigger.artifact.buildNumber> ?: (<+pipeline.variables.MY_TAG> ?: "latest")
+#image_tag: <+trigger.artifact.buildNumber> ?: (<+artifacts.primary.tag> ?: "latest")
 #image_tag: <+trigger.artifact.buildNumber> ?: <+artifacts.primary.tag>
 #image_tag: <+trigger.artifact.buildNumber>
 #image_tag: <+serviceVariables.image_tag>
